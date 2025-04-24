@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_init_table
+      author: dmitrymrsh
+      comment: "Init table"
+      changes:
+        - sqlFile:
+            path: 001_init_table.sql
+            relativeToChangeLogFile: true
+  - changeSet:
+      id: 002_pg_bigm_index
+      author: dmitrymrsh
+      comment: "pg_bigm index"
+      changes:
+        - sqlFile:
+            path: 002_pg_bigm_index.sql
+            relativeToChangeLogFile: true
+  - changeSet:
+      id: 003_pg_trgm_index
+      author: dmitrymrsh
+      comment: "pg_trgm index"
+      changes:
+        - sqlFile:
+            path: 003_pg_trgm_index.sql
+            relativeToChangeLogFile: true
+  - changeSet:
+      id: 004_pg_crypto
+      author: dmitrymrsh
+      comment: "pg_crypto"
+      changes:
+        - sqlFile:
+            path: 004_pg_crypto.sql
+            relativeToChangeLogFile: true
